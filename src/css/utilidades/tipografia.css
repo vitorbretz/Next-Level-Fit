@@ -1,0 +1,12 @@
+.texto-grande {
+    font-size: 5rem;
+    line-height: 1.125;
+    font-family: var(--fontOpercase);
+    text-align: center;
+}
+.texto-medio{
+    font-size: 1.5rem;
+line-height: 1.5;
+font-family: var(--fontParagraph);
+text-align: center;
+}
