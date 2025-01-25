@@ -8,10 +8,9 @@
  @import "./src/css/utilidades/variaveis.css";
  @import "./src/css/metas/metas.css";
  @import "./src/css/sobre/sobre.css";
+ @import "./src/css/parceiros/parceiros.css";
+ @import "./src/css/depoimento/depoimento.css";
 
 
 
 
-body{
-    height: 2000px;
-}

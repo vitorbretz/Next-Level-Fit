@@ -1,0 +1,86 @@
+
+.parceiros{
+    margin-bottom: 50px;
+}
+.title-parceiro{
+    text-align: center;
+    margin-top: 50px;
+}
+.carousel{
+    padding: 50px 0px;
+    margin: 0 auto;
+    width: 1100px;
+    overflow: hidden;
+    display: flex;
+    > * {
+        flex: 0 0 100%;
+      }
+      &:hover .groups_apps {
+        animation-play-state: paused;
+      }
+      
+}
+.cards{
+    width: 100%;
+    color: var(--corPaleta01);
+    border-radius: var(--borderRadios);
+    box-shadow: rgba(0, 0, 0, 30%) 5px 5px 20px 0 ;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    
+    &:nth-child(1) {
+        background-size: 100%;
+        background-image: url(../../img/parceiros/parceiros5.jpeg) ;
+        background-size: 100% 90%;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+  
+      &:nth-child(2) {
+  
+        background-image: url(../../img/parceiros/patrociono00.png) ;
+        background-size: 100% 90%;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+  
+      &:nth-child(3) {
+        background-image: url(../../img/parceiros/images.png) ;
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      &:nth-child(4) {
+        background-image: url(../../img/parceiros/logo-saude.png) ;
+        background-size: 100% 40%;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+     
+      
+}
+.groups_apps{
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+    will-change: transfomr;
+    animation: scrolling 12s linear infinite;
+}
+
+@keyframes scrolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @media (max-width: 800px){
+    .carousel{
+        width: 80vw;
+    }
+
+  }
