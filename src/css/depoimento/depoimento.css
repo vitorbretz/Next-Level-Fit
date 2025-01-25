@@ -1,3 +1,74 @@
 .depoimento{
-    background-color: var(--paleta2);
+    background-color: var(--paleta04);
+    color: var(--paleta3);
+}
+.depoimento-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+.depoimento h2{
+padding-top: 20px;
+padding-bottom: 20px;
+text-align: center;
+text-align:start ;
+}
+.depoimento-img{
+    background-image: url(../../img/depoimento/anastase-maragos-7kEpUPB8vNk-unsplash.jpg);
+    height: 500px;
+    width: 80vw;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    border-radius: var(--borderRadios);
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    
+
+}
+.depoimento-img blockquote {
+    background-color: var(--paleta05);
+    width: 500px;
+    color: #000; 
+    font-family: var(--fontDepoimento);
+    font-weight: 900;
+    font-style: italic;
+    padding: 20px;
+    border-radius: var(--borderRadios);
+    
+    margin-bottom: 40px;
+    margin-right: 40px;
+}
+.depoimento-img blockquote p{
+    font-size: 1.1rem;
+    text-align: left;
+    line-height: 25px;
+
+
+}
+.rosto-depoimento{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-size: 100% 100%;
+
+}
+blockquote .texto-medio span {
+    font-size: 2rem;
+}
+.container-face{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+.container-face span{
+    text-indent: 10px;
+}
+@media (max-width:600px){
+    .depoimento-img blockquote p{
+        font-size: 0.8rem;
+    } 
 }
