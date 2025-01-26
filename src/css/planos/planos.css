@@ -5,14 +5,15 @@
     padding: 50px;
 }
 .seguros h2{
-    text-align: center; 
+    text-align: center;
+    padding: 0; 
 }
 .planos-conteiner {
     max-width:1000px;
     display: grid;
     margin: 20px auto;
     grid-template-columns: repeat(3, 1fr);
-    gap: 60px;
+    gap: 40px;
 }
 .planos-conteiner h3{
     font-size: 2rem;
@@ -21,6 +22,7 @@
 .Preço{
     font-size: 1.3rem;
     font-weight: 500;
+    display: block;
 }
 .planos-item{
     display: grid;
@@ -28,12 +30,12 @@
     grid-template-columns: 1fr 1fr;
     color: var(--paleta3);
     background-color: var(--paleta2);
-    border: 2px solid #7c7c7c;
+   
     padding: 20px 30px;
     justify-content: center;
     text-align: center;
     border-radius: var(--borderRadios);
-    box-shadow: 1px 1px 4px #7c7c7c;
+    box-shadow: 1px 1px 5px #7c7c7c5e;
 }
 .beneficius{
     margin-top: 40px;
@@ -80,6 +82,11 @@
 }
 .premium{
     color: var(--paleta1);
+}
+@media (max-width: 950px){
+    .planos-conteiner{
+        grid-template-columns: 1fr;
+    }
 }
 
 
