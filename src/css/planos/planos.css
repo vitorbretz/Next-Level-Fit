@@ -1,0 +1,89 @@
+.seguros{
+    background-color: var(--paleta04);
+    margin: 0;
+    color: #fff;
+    padding: 50px;
+}
+.seguros h2{
+    text-align: center; 
+}
+.planos-conteiner {
+    max-width:1000px;
+    display: grid;
+    margin: 20px auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+.planos-conteiner h3{
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+.Preço{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.planos-item{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    color: var(--paleta3);
+    background-color: var(--paleta2);
+    border: 2px solid #7c7c7c;
+    padding: 20px 30px;
+    justify-content: center;
+    text-align: center;
+    border-radius: var(--borderRadios);
+    box-shadow: 1px 1px 4px #7c7c7c;
+}
+.beneficius{
+    margin-top: 40px;
+    text-align: start;
+    padding-bottom: 20px;
+    grid-column: 1/-1;
+    }
+.beneficius li{
+    padding: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+   
+}
+.beneficius li::before{
+    content: "";
+    display: inline-block;
+    background-image: url("../../img/icones/check-mark.png");
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 20px;
+    position: absolute;
+    left: -20px;
+}
+.novo{
+    color: var(--paleta05);
+    text-indent: 15px;
+}
+.detalhe-preço{
+    font-size: 0.9rem;
+}
+.planos-item .botao{
+    text-align: center;
+    padding-top: px;
+    border: 3px solid #7c7c7c;
+    grid-column: 1/-1;
+    &:hover{
+        background-color: #7c7c7c;
+    }
+}
+.standard{
+    color: var(--paleta05);
+}
+.premium{
+    color: var(--paleta1);
+}
+
+
+
+
+
+

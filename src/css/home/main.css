@@ -14,14 +14,17 @@
 }
 .main-conteudo{
     align-self: end;
+    display: grid;
     padding-bottom: 180px;
 }
 .main-conteudo h1{
+    text-align: center;
     margin-bottom: 50px;
     color: var(--paleta3);
 }
 .main-conteudo p {
 margin-bottom: 80px;
+text-align: center;
 color: var(--paleta3);
 }
 
