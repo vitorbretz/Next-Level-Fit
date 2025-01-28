@@ -1,0 +1,56 @@
+.visit{
+    background-image: url("../../img/omid-armin-rAh9rA53UWk-unsplash.jpg");
+    width: calc(100vw-20px);
+    height: 500px;
+   background-size: 100% 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+    color: var(--paleta3);
+}
+.visit-conteudo{
+    display: glid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+    
+
+}
+.visit h2{
+    text-align: center;
+    text-shadow: 1px 1px 2px #000;
+
+}
+.visit p {
+    text-shadow: 1px 1px 2px #000;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: var(fontPadrao);
+    font-weight: 600;
+    max-width: max-content;
+}
+#email{
+    margin: 20px auto;
+    font-family: 2rem;
+    width: 300px;
+    height: 45px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 4px #000;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+.visit-conteudo a {
+    position: absolute;
+    background-color: var(--paleta05);
+    color: #000;
+    font-size: 1.3rem;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: 500;
+    top: 15px;
+}
