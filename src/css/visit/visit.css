@@ -1,12 +1,14 @@
 .visit{
+    margin-bottom: 50px;
+    color: var(--paleta3);
+}
+.visit-container{
     background-image: url("../../img/omid-armin-rAh9rA53UWk-unsplash.jpg");
     width: calc(100vw-20px);
     height: 500px;
    background-size: 100% 100%;
     object-fit: cover;
     background-repeat: no-repeat;
-    margin-bottom: 50px;
-    color: var(--paleta3);
 }
 .visit-conteudo{
     display: glid;
@@ -25,32 +27,65 @@
 
 }
 .visit p {
-    text-shadow: 1px 1px 2px #000;
+   
     padding-top: 50px;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1rem;
     font-family: var(fontPadrao);
-    font-weight: 600;
+    font-weight: 500;
     max-width: max-content;
+    padding-bottom: 30px;
 }
 #email{
     margin: 20px auto;
     font-family: 2rem;
-    width: 300px;
-    height: 45px;
+    width: 350px;
+    height: 30px;
     border-radius: 20px;
-    box-shadow: 1px 1px 4px #000;
+    box-shadow: 1px 1px 5px #00000083;
     text-align: center;
-    position: relative;
-    z-index: 2;
+    padding: 20px 0 20px 20px;
+    text-align: start;
+    font-size: 1.1rem;
+    border: none;
+ 
 }
-.visit-conteudo a {
+form{
+    position: relative;
+    ;
+}
+
+.input-submit {
+    font-family: var(--fontParagraph);
     position: absolute;
     background-color: var(--paleta05);
     color: #000;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    padding: 0px 30px;
     border-radius: 20px;
-    padding: 10px;
-    font-weight: 500;
-    top: 15px;
+    padding: 9px;
+    font-weight: 400;
+    top: 20px;
+    width: 100px;
+    font-weight: 600px;
+    right: -2px;
+    border: none;
+   
+  
+}
+.input-submit:hover{
+    background-color: var(--paleta04);
+    color: #fff;
+}
+@media (max-width: 800px){
+    .visit h2{
+        font-size: 1.4rem;
+        padding: 0;
+        text-align: center;
+    }
+    #email{
+        width: 300px;
+        font-size: 0.9rem;
+        
+    }
 }

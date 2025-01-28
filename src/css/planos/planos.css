@@ -2,7 +2,7 @@
     background-color: var(--paleta04);
     margin: 0;
     color: #fff;
-    padding: 50px;
+    padding-bottom: 40px;
 }
 .seguros h2{
     text-align: center;
@@ -31,7 +31,6 @@
     grid-template-columns: 1fr 1fr;
     color: var(--paleta3);
     background-color: var(--paleta2);
-   
     padding: 20px 30px;
     justify-content: center;
     text-align: center;
@@ -87,6 +86,13 @@
 @media (max-width: 950px){
     .planos-conteiner{
         grid-template-columns: 1fr;
+    }
+    .detalhe-preço{
+        display: block;
+    }
+    .planos-item{
+        grid-template-columns: 1fr;
+        margin: 0 auto;
     }
 }
 
