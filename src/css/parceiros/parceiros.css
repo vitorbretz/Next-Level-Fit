@@ -9,7 +9,7 @@
 .carousel{
     padding: 50px 0px;
     margin: 0 auto;
-    width: 1100px;
+    max-width: 1100px;
     overflow: hidden;
     display: flex;
     > * {
