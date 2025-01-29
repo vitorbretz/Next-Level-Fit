@@ -52,7 +52,7 @@ margin-bottom: 32px;
     color: var(--paleta1);
 }
 @media (max-width: 800px){
-    .rodape-container h2 {
+    .rodape-container img {
         display: none;
     }
     .rodape-container{

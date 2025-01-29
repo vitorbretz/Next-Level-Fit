@@ -1,0 +1,45 @@
+.title-main{
+    padding: 60px 0 60px 0;
+    background-color: var(--paleta04);
+    font-family: var(--fontPadrao);
+}
+.titulo p {
+    margin-bottom: 4px;
+    font-size: 1.5rem;
+    color: rgba(163, 163, 163, 0.953);
+    padding-left: 20px;
+    text-transform: lowercase;
+    font-weight: 300;
+}
+.titulo h1 {
+    padding-left: 20px;
+    font-size: 4rem;
+    color: var(--paleta3);
+    font-weight: 700;
+    padding-top: 20px;
+}
+.termos h2{
+    font-size: 1.5rem;
+    color: var(--paleta04);
+    margin-bottom: 20px;
+    font-weight: 600;
+
+}
+.termos p + h2 {
+   margin-top: 40px; 
+}
+.termos p {
+    margin-bottom: 24px;
+    max-width: 75ch ;
+}
+.termos{
+    padding: 80px 20px;
+}
+footer h2{
+
+}
+@media (max-width: 800px){
+    .titulo{
+        padding: 40px 0 40px 0;
+    }
+}
