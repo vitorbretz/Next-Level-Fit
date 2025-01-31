@@ -1,0 +1,54 @@
+.planos-img{
+    position: relative;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.planos-img img {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: max-content;
+    height:300px;
+    object-fit: cover;
+    background-size: 100% 100%;
+    border-radius: var(--borderRadios);
+    padding: 0;
+}
+.planos-bg:nth-child(3){
+    background-color: var(--paleta04);
+    color: #fff;
+}
+.planos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.planos-img span{
+    display: inline-block;
+    background-color: var(--paleta04) ;
+    padding: 8px 16px 8px 8px;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    color: var(--paleta05);
+    border-radius: 8px 0px 0px 8px;
+}
+.Planos-conteudo h2 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+{
+    content: "";
+    display: inline-block;
+    background-image: url("../../img/icones/check-mark.png");
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 20px;
+    position: absolute;
+    left: -20px;
+}
