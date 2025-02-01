@@ -7,10 +7,14 @@
     <title>Agendamento Next Level Fit</title>
     <meta name="description"
         content="Treinamento personalizado, equipamentos modernos, acompanhamento profissional, ambiente motivador, e flexibilidade de horários. Na Next Level Fit, não somos uma academia comum. Oferecemos uma experiência completa, combinando tecnologia, treinamento personalizado e uma comunidade motivadora para levar sua saúde ao próximo nível.">
+        <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    
 </head>
 
-<body id="termor">
+<body id="contato">
     <header>
         <div class="header-container">
             <a class="link-img" href="./index.html">
@@ -33,23 +37,59 @@
                 <h1>Agendamento</h1>
             </div>
         </div>
-        <div class="container agendamento">
-            <section>
+        <div class="conteiner agendamento">
+            <section class="contato-dados">
                 <h2>Endereço</h2>
                 <div class="contato-endereco">
                     <p>Rua Gomes Ferreira, 50 - Botafogo</p>
                     <p>Minas Gerais - MG</p>
                     <P>Brasil</P>
                 </div>
+                <address class="contato-meios">
+                    <a href="">contato@Next-level-fit.com</a>
+                    <a href="">assistencia@Next-level-fit@gmail.com</a>
+                    <a href="tel: +553199999999">+55 31 9999 9999</a>
+                </address>
+                <div class="contato-redes">
+                    <a href="">
+                        <img class="rede-s" src="src/img/icones/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="">
+                        <img class="rede-s" src="src/img/icones/intragran.png" alt="Instagran">
+                    </a>
+                    <a href="">
+                        <img class="rede-s" src="src/img/icones/whatsapp_733585 (1).png" alt="whatsapp">
+                    </a>
+                </div> 
             </section>
-            <address>
-                <a href=""></a>
-                <a href=""></a>
-            </address>
+            <section class="contato-formulario" aria-label="formulario">
+                <form class="form" action=".contato.html">
+                    <div>
+                        <label for=nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome">
+                    </div>
+                    <div>
+                        <label for=telefone">Telefone</label>
+                        <input type="text" id="telefone" name="telefone" placeholder="99 99999-9999">
+                    </div>
+                    <div class="col-2">
+                        <label for=email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="marcosfelipe@gmail.com">
+                    </div>
+                    <div class="col-2">
+                        <label for=msg">Mensagem</label>
+                        <textarea rows="5"  id="msg" name="mensagem" placeholder="Oque voce precisa?"></textarea >
+                    </div>
+                    <div class="col-2"><button class="botao"> Enviar msg</button></div>
+
+                </form>
+            </section>
+               
 
         </div>
         
     </main>
+
     <footer class="rodape">
         <div class="rodape-container">
             <a class="link-img" href="">

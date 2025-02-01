@@ -18,7 +18,8 @@
 .rodape-container h3 {
 margin-bottom: 32px;
 }
-.footer-redes a img {
+.footer-redes a img,
+.rede-s {
     height: 32px;
     cursor: pointer;
 }
