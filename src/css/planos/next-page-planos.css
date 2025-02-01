@@ -1,18 +1,23 @@
+
 .planos-img{
     position: relative;
     width: 300px;
+    height: 300px;
+    margin-left: 30px;
     display: flex;
     justify-content: space-between;
 }
 .planos-img img {
     background-repeat: no-repeat;
     background-size: contain;
-    width: max-content;
-    height:300px;
     object-fit: cover;
     background-size: 100% 100%;
     border-radius: var(--borderRadios);
     padding: 0;
+}
+.planos-bg{
+    background-color: #9b9999cf;
+    font-family: var(--fontPadrao);
 }
 .planos-bg:nth-child(3){
     background-color: var(--paleta04);
@@ -35,20 +40,46 @@
     top: 20px;
     right: 0px;
     color: var(--paleta05);
-    border-radius: 8px 0px 0px 8px;
+    border-radius: 4px 0px 0px 8px;
 }
 .Planos-conteudo h2 {
     margin-bottom: 15px;
     font-size: 2rem;
 }
-{
-    content: "";
-    display: inline-block;
-    background-image: url("../../img/icones/check-mark.png");
-    height: 25px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 20px;
-    position: absolute;
-    left: -20px;
+.btn-plano{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-image:linear-gradient(to right, var(--paleta05), #afda15a3);
+    border: none;
+    color: #000;
+}
+.btn-plano:hover{
+   color: #232323; 
+}
+@media (max-width: 800px){
+    .planos-img{
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 600px){
+    .planos {
+        grid-template-columns:  1fr;
+        justify-items: center;
+        align-items: center;
+    }
+    .Planos-conteudo h2{
+        text-align: center;
+    }
+    .Planos-conteudo p {
+        text-align: center;
+        padding: 0 30px;
+    }
+    .beneficius{
+        
+        margin: 30px auto;
+        width: max-content;
+    }
 }
