@@ -63,13 +63,7 @@ color: #ccc;
     display: none;
 }
 
-#Planos-normais:checked + label{
-    margin-bottom: 200px;
-}
 
-#cadastro-planos-normais{
+#plano-normal:checked  ~ #cadastro-planos-normais,
+#plano-gym:checked  ~ #cadastro-planos-gym{
     display: block;
-}
-#plano-normal:checked{
-    margin-bottom: 200px;
-}
