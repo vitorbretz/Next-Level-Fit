@@ -33,7 +33,12 @@
 .cadastro-produto{
     border-radius: 5px 0 0 5px;
     background-color: #000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: start;
+    gap: 20px;
 }
+
 .cadastro-dados{
     border-radius: 5px 0 0 5px ;
     background: #fff;
@@ -44,26 +49,131 @@
     font-family: var(--fontPadrao);
     font-weight: 500;
 }
+#email{
+    padding: 0;
+    margin: 0;
+}
 .cadastro-conteudo h2 {
     font-size: 1.1rem;
+    margin-bottom: 20px;
 }
 .cadastro-produto label{
-    background-color: #ccc;
-    padding: 15px;
-    display: inline-block;;
+    color: #ccc;
+    background-color: var(--paleta04);
+    display: block;
+    padding: 12px 18px;
+    border-radius: 4px;
+    font: 500 1rem/1.5 "Roboto", serif;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+}
+.cadastro-produto input:checked + label,
+.cadastro-conteudo input:checked + label{
+    background-color: #fff ;
     color: #000;
 }
+.cadastro-produto label::before,
+.cadastro-conteudo label::before{
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.cadastro-produto label span{
+    display: none;
+}
+.cadastro-produto input:checked + label span{
+    display: inline-block;
+}
+.cadastro-produto input:checked + label::before{
+    border-color: #ccc;
+    box-shadow: 0 0  0 1px #ccc;
+}
+.cadastro-produto input{
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.cadastro-produto label:hover{
+    background-color: #86858563;
+}
+.cadastro-produto > * {
+    grid-column: 1/-1;
+  
+}
+#plano-normal,#plano-gym{
+ width: 20px;
+}
+.cadastro-produto > label{
+    grid-column: initial;
+}
 .dadosP{
-color: #ccc;
+color: #8a8989;
 }
 .cadastro-conteudo{
     padding: 20px;
     background: #222;
     margin: 20px;
     display: none;
+
+}
+
+.cadastro-b{
+    background-color: #b1afaf;
+    border-color: var(--paleta05);    
+}
+.cadastro-b:hover{
+    background-color: #222;
+    color: var(--paleta05);
+}
+.cadastro-conteudo h2,
+.cadastro-produto h2{
+    color: #b1afaf;
 }
 
 
 #plano-normal:checked  ~ #cadastro-planos-normais,
 #plano-gym:checked  ~ #cadastro-planos-gym{
     display: block;
+    gap: 20px;
+
+}
+.cadastro-detalhe{
+    display: none;
+    background-color: #86858563;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 4px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.cadastro-detalhe li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.cadastro-produto input:checked + label + .cadastro-detalhe{
+    display: grid;
+}
+
+@media (max-width: 800px){
+    .cadastro{
+        grid-template-columns: 1fr;
+    }
+    .cadastro-dados{
+        border-radius: 0 0 5px 5px;
+    }
+    .cadastro-produto{
+        border-radius:5px 5px 0 0 ;
+    }
+}
+@media (max-width: 400px){
+    .cadastro-produto{
+        grid-template-columns: 1fr;
+    }
+}

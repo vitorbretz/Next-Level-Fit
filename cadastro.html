@@ -43,19 +43,74 @@
                 </h2>
 
                 <input type="radio" name="tipo" value="plano normal" id="plano-normal">
-                <label for="plano-normal">Sim</label>
+                <label for="plano-normal">Não</label>
 
                 <input type="radio" name="tipo" value="plano com Gym Pass" id="plano-gym">
-                <label for="plano-gym">Não</label>
+                <label for="plano-gym">Sim</label>
 
                 <div class="cadastro-conteudo" id="cadastro-planos-normais">
-                    <h2>Escolha o seu plano NORMAL</h2>
-                    <p>conteudo teste</p>   
+                    <h2>Escolha o seu plano</h2>
+
+                    <input type="radio" name="planos-input" value="basic" id="basic">
+                    <label for="basic">Basic <span>R$ 90/mês</span></label>
+                    <div class="beneficius cadastro-detalhe">
+                        <ul>
+                            <li>Acesso ilimitado à academia</li>
+                            <li>Aulas coletivas</li>
+                            <li>1ª Avaliação gratuita</li>
+                        </ul>
+                        <div>
+                            <img src="src/img/anastase-maragos-fG0p4Qh_aWI-unsplash (2).jpg" alt="">
+                        </div>
+                    </div>
+
+                    <input type="radio" name="planos-input" value="basic" id="standard">
+                    <label for="standard">Standard <span>R$ 150/mês</span></label>
+                    <div class="beneficius cadastro-detalhe">
+                        <ul>
+                            <li>Acesso ilimitado à academia</li>
+                            <li>Aulas coletivas</li>
+                            <li>Avaliação física mensal</li>
+                            <li>Acompanhamento nutricional</li>
+                        </ul>
+                        <div>
+                            <img src="src/img/woman-5591780_640.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <input type="radio" name="planos-input" value="premium" id="planos-input">
+                    <label for="planos-input">Premium <span>R$ 300/mês</span></label>
+
+                    <div class="beneficius cadastro-detalhe">
+                        <ul>
+                            <li>Acesso ilimitado à academia</li>
+                            <li>Aulas coletivas</li>
+                            <li>Avaliação ilimitada</li>
+                            <li>Acompanhamento nutricional</li>
+                            <li>Treinos com personal</li>
+                            <li>Aulas de pilates <span class="novo">Novo</span></li>
+                        </ul>
+                        <div>
+                            <img src="src/img/14780.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
 
                 <div class="cadastro-conteudo" id="cadastro-planos-gym">
                     <h2>Escolha o seu plano GYM</h2>
-                    <p>conteudo teste</p>   
+                    
+                    <input type="radio" name="planos-input" value="basic" id="#plano-gym">
+                    <label for="#plano-gym">Basic <span>R$ 90/mês</span></label>
+                    <div class="beneficius cadastro-detalhe">
+                        <ul>
+                            <li>Acesso ilimitado à academia</li>
+                            <li>Aulas coletivas</li>
+                            <li>1ª Avaliação gratuita</li>
+                        </ul>
+                        <div>
+                            <img src="src/img/anastase-maragos-fG0p4Qh_aWI-unsplash (2).jpg" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="cadastro-dados form">
@@ -68,28 +123,29 @@
                     <label for=sobrenome">Sobrenome</label>
                     <input type="text" id="sobrenome" name="nome">
                 </div>
-                <div class="col-2">
+                <div >
                     <label for="cpf">CPF</label>
                     <input type="text" id="cpf" name="nome" placeholder="000.000.000-00">
+                </div>
+                <div >
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="marcosfelipe@gmail.com">
                 </div>
 
                 <div>
                     <label for="telefone">Telefone</label>
                     <input type="text" id="telefone" name="telefone" placeholder="99 99999-9999">
                 </div>
-                <div class="col-2">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="marcosfelipe@gmail.com">
-                </div>
-                <div class="col-2">
+                <div>
                     <label for="cep">Cep</label>
                     <input type="text" id="cep" name="cep" placeholder="Cep">
                 </div>
+                
                 <div class="col-2">
                     <label for=endereco">Endereço</label>
                     <input id="endereco" type="text" name="endeco">
                 </div>
-                <div class="col-2"><button class="botao">adquirir</button></div>
+                <div class="col-2"><button class="botao cadastro-b">Assinar</button></div>
             </div>
 
 
