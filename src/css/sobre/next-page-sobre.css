@@ -20,6 +20,7 @@
 .about-img img{
     flex: 1;
     min-width: 200px;
+    cursor: pointer;
 }
 .about-img img:first-child{
     min-width: 100%;
