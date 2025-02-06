@@ -1,0 +1,142 @@
+.about-bg{
+    background-color: var(--paleta04);
+    color: #fff;
+}
+.about{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap:40px ;
+    padding: 60px 0 ;
+    
+}
+.about-img{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px
+}
+.about-img img{
+    flex: 1;
+    min-width: 200px;
+}
+.about-img img:first-child{
+    min-width: 100%;
+}
+.about-conteudo{
+   
+}
+.about-conteudo p {
+margin-bottom: 30px;
+text-align: start;
+
+
+}
+.about-conteudo .assinar{
+    display: grid;
+    grid-template-columns: max-content auto;
+    align-items: center;
+    justify-items: start;
+    gap: 4px 8px;
+    margin-bottom: 30px;
+}
+.info-academia li img,
+.assinar img {
+    height: 25px;
+   
+}
+.assinar a {
+    grid-row: span 2 ;
+}
+.assinar span{
+    display: flex;
+    align-items: center;
+    background-color: var(--paleta2);
+    padding: 3px;
+    font-size: 0.8rem;
+    border-radius: var(--borderRadios);
+    gap: 8px;
+}
+.about-conteudo h2{
+    color: #a2a2a2;
+    font-size: 1.5rem;
+    font-family: var(--fontPadrao);
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.015em;
+    margin-bottom: 10px;
+}
+.info-academia,
+.info-coletivo{
+    padding: 32px;
+    border-radius: var(--borderRadios
+    );
+    background-color: var(--paleta2);
+}
+.info-academia{
+    margin-bottom: 30px;   display: grid;
+    font-size: 0.9rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.info-academia li {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 10px;
+}
+.info-academia p {
+    text-align: inherit;
+}
+.btn-about{
+    border-color: var(--paleta05);
+}
+.btn-about:hover{
+    background-color: var(--paleta05);
+    color: #000;
+}
+.info-coletivo{
+    font-family: var(--fontPadrao);
+    font-size: 0.9rem;
+    color: #a2a2a2;
+}
+.info-coletivo li {
+    padding: 6px 0;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #a2a2a28b;
+
+}
+.info-coletivo li:last-child{
+    border: none;
+}
+.info-coletivo span {
+    color: #767474;
+}
+@media (max-width: 800px){
+    .about{
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0;
+    }
+    .about-img{
+        margin: 0 30px;
+    }
+    .about-conteudo p {
+        text-align: center;
+    }
+    .about-conteudo .assinar{
+       margin-left: 30px;
+       justify-items: center;
+       gap: 20px;
+       grid-template-columns: auto;
+    }
+    .about-conteudo h2{
+       margin-left: 30px;
+    }
+    
+}
