@@ -8,7 +8,7 @@ function trocarImagem(event){
     if(media){
         galeriaContainer.prepend(img);
     }
-    
+    z
     
 }
 
